@@ -1,0 +1,21 @@
+int max= a[0],last = 8,largest=0;
+        System.out.println("Sorting using Selection sort algorithm/n");
+        for(int i=0;i<9;i++){
+            max = a[0];largest = 0;
+            for(int j=0;j<=last;j++){
+                if(a[j]>max){
+                    max = a[j];
+                    largest = j;
+                }
+              
+            }
+            int temp = a[last];
+            a[last] = max;
+            a[largest] = temp;
+            last--;
+        }
+        // printing the array  
+        System.out.println("The Array after Selection Sort:\n");
+        for(int i=0;i<9;i++){
+            System.out.println(a[i]);
+        }
