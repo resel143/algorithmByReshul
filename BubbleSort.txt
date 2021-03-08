@@ -1,0 +1,14 @@
+for(int i=0;i<9;i++){
+        //     for(int j=i+1;j<9;j++){
+        //         if(a[j]<=a[i]){
+        //             int temp;
+        //             temp = a[j];
+        //             a[j]=a[i];
+        //             a[i]=temp;
+        //         }
+        //     }
+        //     System.out.println("From the "+ i + "loop we get our new array as:   ");
+        //     for(int m=0;m<9;m++){
+        //         System.out.println(a[m]);
+        //     }
+        // }
