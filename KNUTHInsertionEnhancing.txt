@@ -1,0 +1,25 @@
+// finding k in knuth algorithm
+        int k =1;
+        while(Math.pow(3, k) < (2*9)+1 ){
+            k++;
+        }
+        k--;
+        i =k;
+        while(i<9){
+            j =i-k;
+            
+            while(j>=0){
+                int temp = a[j+k];
+                if(a[j]>=a[j+k]){
+                    a[j+k]= a[j];
+                    a[j]=temp;   
+                }
+                j-=k;
+            }
+            i++;
+        }
+        System.out.println("k = "+k);
+        System.out.println("After the KNUTH algo we get :");
+        for(i=0;i<9;i++){
+            System.out.println(a[i]);
+        }
