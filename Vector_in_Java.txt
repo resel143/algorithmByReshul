@@ -1,0 +1,17 @@
+import java.util.*;
+public class HelloWorld{
+    
+    public 
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        Vector v = new Vector();
+        
+        v.add(1);
+        v.add("Reshul");
+        v.add(2);
+        v.add("Selena");
+        
+        System.out.println(v);
+     }
+}
