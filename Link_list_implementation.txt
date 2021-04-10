@@ -1,0 +1,69 @@
+import java.util.*;
+public class LinkList{
+    Node head;
+    
+    static class Node{
+        int data;
+        Node next;
+        
+        // create a new node 
+        Node(int d) {data = d;}
+    }
+    
+    public static LinkList insert(LinkList list, int data){
+        
+        // create new node with the data 
+        Node new_node = new Node(data);
+        new_node.next = null;
+        
+        
+        // if list is empty making head as new_node 
+        if(list.head==null){
+            list.head = new_node;
+        }else{
+            
+            //insertin in first place of list
+            // Node first = list.head;
+            // list.head = new_node;
+            // new_node.next = first;
+            
+            // insertin at the last place 
+        //     Node last = list.head;
+        //     while(last.next!=null){
+        //         last=last.next;
+        //     }
+        //     last.next = new_node;
+        // }
+        
+        return list;
+    }
+    
+    // printing the ll 
+    
+    public static void printedLL(LinkList list){
+        Node currNode = list.head;
+        while(currNode.next != null){
+            System.out.println(currNode.data);
+            currNode = currNode.next;
+        }
+        System.out.println(currNode.data);
+    }
+    
+    
+    // driver code 
+    
+    public static void main(String[] args){
+        
+        
+        LinkList list  = new LinkList();
+        
+        list = insert(list,1);
+        list = insert(list,2);
+        list = insert(list,3);
+        list = insert(list,4);
+        list = insert(list,5);
+        
+        printedLL(list);
+    }
+    
+}
