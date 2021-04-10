@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        ArrayList<String> names = new ArrayList<String>();
+        
+        names.add("Reshul");
+        names.add("Reshul");
+        names.add("Reshul");
+        names.add("Reshul");
+        names.add("Reshul");
+        
+        System.out.println(names.get(2));
+        System.out.println(names.isEmpty());
+        
+        // replacing the names 
+        names.set(1, "Selena");
+        
+        System.out.println(names);
+        
+        // size of the list 
+        
+        System.out.println(names.size());
+        System.out.println(names.indexOf("Selena"));
+        System.out.println(names.contains("Selena"));
+        
+        names.remove(2);
+        System.out.println(names);
+     }
+}
