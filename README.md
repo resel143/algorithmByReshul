@@ -1,2 +1,2 @@
 # algorithmByReshul
-Every Algorithm implemented in JAVA and C++
+Every Algorithm implemented in OOPS
